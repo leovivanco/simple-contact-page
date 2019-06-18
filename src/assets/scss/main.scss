@@ -8,6 +8,17 @@ body {
   background-color: $white !important
 }
 
+input {
+  text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+  text-transform: none;
+}
+::placeholder {
+  text-transform: uppercase;
+}
+
 img {
   max-width: 100%;
 }

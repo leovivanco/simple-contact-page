@@ -8,10 +8,6 @@
   }
 
   .navbar-expand-lg {
-    // animation-duration: .4s;
-    // transition-timing-function: ease-in-out;
-    // animation-name: sideRightLeft;
-
     .navbar-nav {
       margin-top: -.5rem;
     }
@@ -38,6 +34,7 @@
       position: absolute;
       top: -1rem;
       right: 0;
+      z-index: 1;
 
       .navbar-nav {
         background-color: rgba($black, .7);
