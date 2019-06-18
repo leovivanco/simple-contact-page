@@ -2,11 +2,9 @@ import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 i18n.use(LanguageDetector).init({
-  // we init with resources
   resources: {
     en: {
       translations: {
-        Introduction: "Introduction",
         'Log in': 'Log in',
         descripitionLogin: 'Please enter your credentials to continue',
         "About US": "About US",
@@ -17,13 +15,12 @@ i18n.use(LanguageDetector).init({
         "New user? Register here": "New user? Register here",
         "Login": "Login",
         "Register": "Register",
-        "EMAIL": "EMAIL",
-        "PASSWORD": "PASSWORD"
+        "E-mail": "E-mail",
+        "Password": "Password"
       }
     },
     ptBr: {
       translations: {
-        Introduction: "前書き",
         'Log in': 'Entrar',
         descripitionLogin: 'Por favor insira suas credenciais para continuar',
         "About US": "Sobre nós",
@@ -34,8 +31,8 @@ i18n.use(LanguageDetector).init({
         "New user? Register here": "Novo usuário? Registre-se aqui",
         "Login": "Entrar",
         "Register": "Cadastrar",
-        "EMAIL": "E-MAIL",
-        "PASSWORD": "SENHA"
+        "E-mail": "E-mail",
+        "Password": "Password"
 
       }
     }
@@ -43,14 +40,13 @@ i18n.use(LanguageDetector).init({
   fallbackLng: "en",
   debug: true,
 
-  // have a common namespace used around the full app
   ns: ["translations"],
   defaultNS: "translations",
 
-  keySeparator: false, // we use content as keys
+  keySeparator: false,
 
   interpolation: {
-    escapeValue: false, // not needed for react!!
+    escapeValue: false,
     formatSeparator: ","
   },
 

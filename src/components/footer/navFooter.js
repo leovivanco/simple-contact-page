@@ -6,7 +6,7 @@ export default function NavFooter() {
   const { t } = useTranslation();
 
   return (
-    <Nav className="list-inline d-flex justify-content-end">
+    <Nav className="nav-footer list-inline d-flex justify-content-end">
       <NavItem className="list-inline-item">
         <NavLink href="#" className="nav-link-default">
           {t('About US')}

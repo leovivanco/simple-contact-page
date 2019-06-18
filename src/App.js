@@ -1,9 +1,9 @@
 import React  from 'react';
-import Header from './components/header/header';
+import Header from './components/header/Header';
 import './App.scss';
-import Login from './components/login/login';
+import Login from './components/login/Login';
 import { Container } from 'reactstrap';
-import Footer from './components/footer/footer';
+import Footer from './components/footer/Footer';
 import { useTranslation } from 'react-i18next';
 
 export function App() {
