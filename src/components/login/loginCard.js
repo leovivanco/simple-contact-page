@@ -6,8 +6,10 @@ export default function LoginCard() {
   const { t } = useTranslation();
   return (
     <Container>
-      <h1>{t('Log in')}</h1>
-      <p>{t('descripitionLogin')}</p>
+      <div className="text-center">
+        <h1 className="title">{t('Log in')}</h1>
+        <p>{t('descripitionLogin')}</p>
+      </div>
       <Form>
         <Row form>
           <Col>
@@ -22,7 +24,7 @@ export default function LoginCard() {
         </Row>
         <Row>
           <Col>
-            <Button>{t('Log in')}</Button>
+            <Button className="btn-form">{t('Log in')}</Button>
           </Col>
         </Row>
 
@@ -30,10 +32,10 @@ export default function LoginCard() {
       <Row className="justify-content-center">
         <Nav navbar>
           <NavItem className="text-center">
-            <NavLink href="#">{t('Forgot my password')}</NavLink>
+            <NavLink className="nav-link-default" href="#">{t('Forgot my password')}</NavLink>
           </NavItem>
           <NavItem className="text-center">
-            <NavLink href="#">{t('New user? Register here')}</NavLink>
+            <NavLink className="nav-link-default" href="#">{t('New user? Register here')}</NavLink>
           </NavItem>
         </Nav>
       </Row>

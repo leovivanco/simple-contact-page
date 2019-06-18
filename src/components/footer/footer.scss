@@ -1,25 +1,35 @@
 @import '../../assets/scss/utilities/variables';
 
 .footer {
+  margin-bottom: 1rem;
+
   .ico-global {
     width: 30px;
     height: 30px;
     float: left;
     margin-right: 1rem;
     margin-top: -4px;
-    margin: -.2rem .5rem 0 0;
+    margin: 0 .5rem 0 0;
 
     svg {
       width: 100%;
       height: 30px;
+      fill: $black;
     }
   }
-  .button-localization{
-    &:hover{
-      svg{
-        fill: $white;
-      }
+
+  .selected {
+    font-size: 1.2rem;
+  }
+
+
+
+  .dropdown {
+    @media screen and (max-width: $break-medium) {
+      justify-content: center;
+      display: flex;
     }
+
   }
 
   .button-localization {
@@ -27,5 +37,12 @@
     background-color: transparent;
     color: $black;
     border: 0;
+
+    &:hover {
+      background-color: $black;
+      svg {
+        fill: $white;
+      }
+    }
   }
 }

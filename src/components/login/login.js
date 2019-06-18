@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import imgTv from '../../assets/img/img-tv.png';
+import imgTv from '../../assets/img/img-tv-2.png';
 import { Row, Col } from 'reactstrap';
 import LoginCard from './loginCard';
 import './login.scss';
