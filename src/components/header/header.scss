@@ -7,15 +7,24 @@
     display: block;
   }
 
-  .img-logo {
-    max-width: 200px;
-    // background-color: rgba($black, .4);
-    // border-radius: 3rem;
+  .navbar-expand-lg {
+    // animation-duration: .4s;
+    // transition-timing-function: ease-in-out;
+    // animation-name: sideRightLeft;
+
+    .navbar-nav {
+      margin-top: -.5rem;
+    }
   }
 
-  .nav-item {
-    //transition: ease-in .5s all;
+  .img-logo {
+    max-width: 200px;
+    animation-duration: .4s;
+    transition-timing-function: ease-in-out;
+    animation-name: slideTopBottom;
+
   }
+
 
   .show {
 
@@ -35,7 +44,7 @@
         border-radius: 9px;
         border-top-right-radius: 0;
         overflow: auto;
-        margin: -2px 8px 0 0 ;
+        margin: -2px 8px 0 0;
         z-index: -1;
 
         .nav-link {

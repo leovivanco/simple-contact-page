@@ -2,6 +2,9 @@
 
 .footer {
   margin-bottom: 1rem;
+  // animation-duration: .4s;
+  // transition-timing-function: ease-in-out;
+  // animation-name: slideBottomTop;
 
   .ico-global {
     width: 30px;
@@ -28,6 +31,7 @@
     @media screen and (max-width: $break-medium) {
       justify-content: center;
       display: flex;
+      margin-bottom: 2rem;
     }
 
   }
@@ -40,6 +44,7 @@
 
     &:hover {
       background-color: $black;
+
       svg {
         fill: $white;
       }

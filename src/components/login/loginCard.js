@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Button, Form, FormGroup, Input, Container, Nav, NavItem, NavLink } from 'reactstrap';
+import { Col, Row, Button, Form, FormGroup, Input, Container, Nav, NavItem, NavLink, FormFeedback } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 
 export default function LoginCard() {
@@ -14,17 +14,20 @@ export default function LoginCard() {
         <Row form>
           <Col>
             <FormGroup>
-              <Input type="email" autoComplete="username" name="email" placeholder={t('EMAIL')} />
+              <FormFeedback>You will not be able to see this</FormFeedback>
+              <Input type="email" autoComplete="username" name="email" placeholder={t('EMAIL')} required />
             </FormGroup>
             <FormGroup>
+              <FormFeedback>You will not be able to see this</FormFeedback>
+
               <Input type="password" name="password"
-                autoComplete="current-password" placeholder={t('PASSWORD')} />
+                autoComplete="current-password" placeholder={t('PASSWORD')} maxLength="8" minLength="8" required />
             </FormGroup>
           </Col>
         </Row>
         <Row>
           <Col>
-            <Button className="btn-form">{t('Log in')}</Button>
+            <Button type="submit" className="btn-form">{t('Log in')}</Button>
           </Col>
         </Row>
 

@@ -4,3 +4,54 @@ $break-medium: 720px;
 //Colours
 $black: #333333;
 $white: #f2f2f2;
+
+//Animations
+
+/* The animation code */
+@keyframes sideLeftRight {
+  from {
+    transform: translate(-200px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes sideRightLeft {
+  from {
+    transform: translate(200px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTopBottom {
+  from {
+    transform: translate(0, -60px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottomTop {
+  from {
+    transform: translate(0, 60px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

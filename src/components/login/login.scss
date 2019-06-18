@@ -6,9 +6,11 @@
   .img-tv {
     display: none;
   }
-  .title{
+
+  .title {
     font-size: 4rem;
   }
+
   @media screen and (min-width: $break-medium) {
     margin-bottom: 6.6rem;
 
@@ -30,7 +32,25 @@
     font-size: 1.2rem;
   }
 
-  // .nav-link{
-  //   text-decoration: underline;
-  // }
+  .nav-link {
+    opacity: .5;
+    font-size: .8rem;
+  }
+
+
+
+
+  .img-tv {
+    animation-name: sideLeftRight;
+  }
+
+  .login-card {
+    animation-name: sideRightLeft;
+  }
+
+  .login-card,
+  .img-tv {
+    animation-duration: .4s;
+    transition-timing-function: ease-in-out;
+  }
 }
