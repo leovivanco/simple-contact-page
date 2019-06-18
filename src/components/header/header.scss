@@ -1,0 +1,23 @@
+@import '../../assets/scss/utilities/variables';
+
+.header {
+  margin: 2rem 0 2.5rem 0;
+
+  .img-logo {
+    display: block;
+  }
+
+  .img-logo {
+    max-width: 200px;
+    // background-color: rgba($black, .4);
+    // border-radius: 3rem;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $black;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

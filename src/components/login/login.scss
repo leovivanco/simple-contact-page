@@ -1,0 +1,17 @@
+@import '../../assets/scss/utilities/variables';
+
+.login {
+  .img-tv {
+    display: none;
+  }
+
+  @media screen and (min-width: $break-medium) {
+    .img-tv {
+      display: block;
+    }
+  }
+
+  .container{
+    max-width: 500px;
+  }
+}
