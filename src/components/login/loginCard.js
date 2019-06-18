@@ -15,13 +15,13 @@ export default function LoginCard() {
           <Col>
             <FormGroup>
               <FormFeedback>You will not be able to see this</FormFeedback>
-              <Input type="email" autoComplete="username" name="email" placeholder={t('EMAIL')} required />
+              <Input type="email" autoComplete="username" name="email" placeholder={t('Email')} required />
             </FormGroup>
             <FormGroup>
               <FormFeedback>You will not be able to see this</FormFeedback>
 
               <Input type="password" name="password"
-                autoComplete="current-password" placeholder={t('PASSWORD')} maxLength="8" minLength="8" required />
+                autoComplete="current-password" placeholder={t('Password')} maxLength="8" minLength="8" required />
             </FormGroup>
           </Col>
         </Row>
