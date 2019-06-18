@@ -24,10 +24,10 @@ export default class NavBar extends React.Component {
           <Collapse className="justify-content-end" isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink>Login</NavLink>
+                <NavLink className="nav-link-default">{this.props.link1}</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink>Register</NavLink>
+                <NavLink className="nav-link-default">{this.props.link2}</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

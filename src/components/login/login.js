@@ -12,7 +12,7 @@ export default class Login extends Component {
             <img src={imgTv} className="img-fluid" alt="img with a tv"/>
           </Col>
           <Col md="7" className="login-card">
-            <LoginCard />
+            <LoginCard title={this.props.title}  />
           </Col>
         </Row>
       </main>

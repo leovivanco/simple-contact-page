@@ -1,17 +1,21 @@
 @import '../../assets/scss/utilities/variables';
 
 .login {
+  margin-bottom: 2rem;
+
   .img-tv {
     display: none;
   }
 
   @media screen and (min-width: $break-medium) {
+    margin-bottom: 10rem;
+
     .img-tv {
       display: block;
     }
   }
 
-  .container{
+  .container {
     max-width: 500px;
   }
 }

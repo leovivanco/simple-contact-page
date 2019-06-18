@@ -13,11 +13,44 @@
     // border-radius: 3rem;
   }
 
-  .navbar-nav {
-    .nav-link {
-      color: $black;
-      text-transform: uppercase;
-      font-weight: bold;
+  .nav-item {
+    //transition: ease-in .5s all;
+  }
+
+  .show {
+
+    .nav-item {
+      border-bottom: $black solid 1px;
     }
   }
+
+  @media screen and (max-width: $break-medium) {
+    .navbar {
+      position: absolute;
+      top: -1rem;
+      right: 0;
+
+      .navbar-nav {
+        background-color: rgba($black, .7);
+        border-radius: 9px;
+        border-top-right-radius: 0;
+        overflow: auto;
+        margin: -2px 8px 0 0 ;
+        z-index: -1;
+
+        .nav-link {
+          color: $white !important;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  .navbar-light {
+    .navbar-toggler {
+      color: rgba($black, .9);
+      border-color: rgba($black, .7);
+    }
+  }
+
 }
